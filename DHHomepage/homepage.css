@@ -1,0 +1,79 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.parent-flex{
+    margin: auto;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-child-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+.flex-child-text{
+    text-align: center;
+}
+
+#header-div{
+    height: 15%;
+}
+
+.header-child-div{
+    height: 100%;
+    flex-basis: auto;
+}
+
+#homepage-div{
+    flex: 2 1 1;
+    width: 66%;
+}
+
+#wallet-div{
+    flex: 1 1 1;
+    width: 32%;
+}
+
+.header-child-text{
+
+}
+
+#body-div{
+    height: 70%;
+}
+
+.body-child-div{
+    flex: 0;
+    width: 32%;
+    height: 96%;
+    flex-basis: auto;
+}
+
+.body-child-div{
+
+}
+
+#footer-div{
+    height: 15%;
+}
+
+.footer-child-div{
+    flex: 0;
+    width: 100%;
+    height: 100%;
+    flex-basis: auto;
+}
+
+.footer-child-text{
+    
+}
