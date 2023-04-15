@@ -27,9 +27,8 @@ body{
 
 .gradient-child{
     height:100%;
-    padding: 10px 10px 10px 10px;
-    background-color: #79c27b;
-    background-clip: padding-box;
+    margin: 10px 10px 10px 10px;
+    background-color: linear-gradient(#79c27b,#90107f);
 }
 
 #header-div{
