@@ -28,14 +28,15 @@
     <header>
         <h1><center><b><i> Daemuse Marketplace</i></b></center></h1>
     </header>
-    <a href="/Users/djbb1/OneDrive/Documents/GitHub/DaemuseHackthon/DHAPIs/walletapi.html"><button id="Connect Wallet" style="width: 200px;height: 30px;">Connect Wallet</button></a>
-    <a href="/Users/djbb1/OneDrive/Documents/GitHub/DaemuseHackthon/DHMintingPortal/mintingportal.html"><button id="minting" style="width: 200px;height: 30px;" >Minting Portal</button></a>
-    <a href="/Users/djbb1/OneDrive/Documents/GitHub/DaemuseHackthon/DHSocial/social.html"><button id="Social" style="width: 200px;height: 30px;">Social</button></a>
-    <a href="/Users/djbb1/OneDrive/Documents/GitHub/DaemuseHackthon/DHDex/dex.html"><button id="Dex" style="width: 200px;height: 30px;" >DEX</button></a>
-    <a href="/Users/djbb1/OneDrive/Documents/GitHub/DHHomepage/homepage.html"><button id="homepage" style="width: 200px;height: 30px;" >Homepage</button></a>
+    <a href="../DHAPIs/walletapi.html"><button id="Connect Wallet" style="width: 200px;height: 30px;">Connect Wallet</button></a>
+    <a href="../DHMintingPortal/mintingportal.html"><button id="minting" style="width: 200px;height: 30px;" >Minting Portal</button></a>
+    <a href="../DHSocial/social.html"><button id="Social" style="width: 200px;height: 30px;">Social</button></a>
+    <a href="../DHDex/dex.html"><button id="Dex" style="width: 200px;height: 30px;">DEX</button></a>
+    <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 200px;height: 30px;">Homepage</button></a>
 <!--if connected to wallet then display user name information-->
 
  <!--Use of Containers for lists of Recent/top Songs/Artists in Database-->
+<section>
 <h2>Recent Songs</h2><!--database php to sql database of songs-->
 <!--display dSong varchars in order of time minted-->
 <!--clicking on song should take user to page to purchase song-->
@@ -48,12 +49,16 @@
 <h2>Top Songs</h2><!--database php to sql database of songs-->
 <!--display dSong varchars in order of highest value-->
 <!--clicking on song should take user to page to purchase song-->
+</section>
+<section>
 <div class="grid-container">
     <dl>
         <dt>$dSong1</dt>
         <dd>Song Value, Artist Social Link</dd>
     </dl>
 </div>
+</section>
+<section>
 <h2>New Artist</h2><!--database php to sql database of new wallet creating minting-->
 <!--display dArtist varchars in order of recency-->
 <!--clicking on artist should navigate to artist social page-->
@@ -63,6 +68,8 @@
         <dd>Artist Decriptption, Artist Social Link</dd>
     </dl>
 </div>
+</section>
+<section>
 <h2>Top Artist</h2><!--database php to sql database of new wallet creating minting-->
 <!--display dArtist varchars in order of recency-->
 <!--clicking on artist should navigate to artist social page-->
@@ -72,6 +79,7 @@
         <dd>Artist Decriptption, Artist Social Link</dd>
     </dl>
 </div>
+</section>
 
 </body>
 </html>
