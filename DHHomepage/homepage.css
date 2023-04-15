@@ -18,17 +18,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: linear-gradient(#b8eac7, #c60f8e);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .flex-child-text{
     text-align: center;
-    color: #2c2544;
-}
-
-.gradient-child{
-    height:100%;
-    margin: 10px 10px 10px 10px;
-    background-color: linear-gradient(#79c27b,#90107f);
+    color: white;
 }
 
 #header-div{
@@ -63,7 +61,6 @@ body{
     width: 32%;
     height: 96%;
     flex-basis: auto;
-    background: linear-gradient(#b8eac7, #c60f8e)
 }
 
 .body-child-div{
