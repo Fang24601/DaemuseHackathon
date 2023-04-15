@@ -1,1 +1,77 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Marketplace</title>
+    <style>
+        body{
+            background-color:#b8eac7;
+        }
+        h1{
+            border-style: dotted;
+            border-color:indigo;
+        }
+        h2{
+            border-style: dotted;
+            border-color:indigo
+        }
+        .grid-container{
+            display: grid;
+            justify-content:space-evenly;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><center><b><i> Daemuse Marketplace</i></b></center></h1>
+    </header>
+<button id="Connect Wallet" style="width: 200px;height: 30px;" href="/DaemuseHackthon/DHAPIs/walletapi.html">Connect Wallet</button>
+<button id="minting" style="width: 200px;height: 30px;" href="/DaemuseHackthon/DHMintingPortal/mintingportal.html">Minting Portal</button>
+<button id="Social" style="width: 200px;height: 30px;" href="/DaemuseHackthon/DHSocial/social.html">Social</button>
+<button id="Dex" style="width: 200px;height: 30px;" href="/DaemuseHackthon/DHDex/dex.html">DEX</button>
+<button id="homepage" style="width: 200px;height: 30px;" href="/DHHomepage/homepage.html">Homepage</button>
+<!--if connected to wallet then display user name information-->
+
+ <!--Use of Containers for lists of Recent/top Songs/Artists in Database-->
+<h2>Recent Songs</h2><!--database php to sql database of songs-->
+<!--display dSong varchars in order of time minted-->
+<!--clicking on song should take user to page to purchase song-->
+<div class="grid-container">
+   <dl>
+        <dt>$dSong1</dt>
+        <dd>Song Value, Artist Social Link</dd>
+    </dl>
+</div>
+<h2>Top Songs</h2><!--database php to sql database of songs-->
+<!--display dSong varchars in order of highest value-->
+<!--clicking on song should take user to page to purchase song-->
+<div class="grid-container">
+    <dl>
+        <dt>$dSong1</dt>
+        <dd>Song Value, Artist Social Link</dd>
+    </dl>
+</div>
+<h2>New Artist</h2><!--database php to sql database of new wallet creating minting-->
+<!--display dArtist varchars in order of recency-->
+<!--clicking on artist should navigate to artist social page-->
+<div class="grid-container">
+    <dl>
+        <dt>$dArtist1</dt>
+        <dd>Artist Decriptption, Artist Social Link</dd>
+    </dl>
+</div>
+<h2>Top Artist</h2><!--database php to sql database of new wallet creating minting-->
+<!--display dArtist varchars in order of recency-->
+<!--clicking on artist should navigate to artist social page-->
+<div class="grid-container">
+    <dl>
+        <dt>$dArtist1</dt>
+        <dd>Artist Decriptption, Artist Social Link</dd>
+    </dl>
+</div>
+
+</body>
+</html>
