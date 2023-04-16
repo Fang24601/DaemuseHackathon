@@ -1,0 +1,56 @@
+
+.header {
+    padding: 10px 16px;
+    background-color: #c60f8e;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.fixed + .content {
+    padding-top: 102px;
+}
+
+.user-post{
+    height:350px;
+    margin-top: 8px;
+    background-image: linear-gradient(#c60f8e, #b8eac7);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.post-profile-div{
+    width: 175px;
+}
+
+.avatar{
+    padding: 25px;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-content-div{
+
+}
+
+.post-content-text{
+    margin:25px;
+    background-image: linear-gradient(white, black);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
