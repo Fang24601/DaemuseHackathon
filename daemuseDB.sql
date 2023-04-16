@@ -2,7 +2,6 @@ CREATE DATABSE daemuseDB;
 
 --user table: is artist?, username, social link, collections, wallet value
 --nft collections album name, songs, song price, owner username
--- 
 CREATE TABLE users(
     user_num char(4),
     isArtist bool,
@@ -14,7 +13,7 @@ CREATE TABLE users(
     primary key ()
 );
 CREATE TABLE nfts(
-    title value,
+    nft varchar(100),
     price dec(20,10),
     mintnum int,
     usercreator username,

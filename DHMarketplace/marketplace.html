@@ -11,7 +11,16 @@
             display: flex;
             justify-content:space-evenly;
             height:96%;
-
+        }
+        .song-container{
+            display: flex;
+            height:100px;
+            flex-direction: column;
+            justify-content: center;
+            background-image: linear-gradient(#b8eac7, #db0e9e);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
     </style>
 </head>
@@ -26,13 +35,12 @@
     <a href="../DHDex/dex.html"><button id="Dex" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">DEX</button></a>
     <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
 <!--if connected to wallet then display user name information-->
-
 <!--Use of Containers for lists of Recent/top Songs/Artists in Database-->
 <!--display dSong varchars in order of time minted-->
 <!--clicking on song should take user to page to purchase song-->
 <div>
     <h2>Recent Songs</h2>
-    <dl>
+    <dl class="song-container">
         <dt>$dSong1</dt>
         <dd>Song Value, Artist Social Link</dd>
     </dl>
@@ -43,7 +51,7 @@
 <!--clicking on song should take user to page to purchase song-->
 <div>
     <h2>Top Songs</h2>
-   <dl>
+   <dl class="song-container">
         <dt>$dSong1</dt>
         <dd>Song Value, Artist Social Link</dd>
     </dl>
@@ -53,7 +61,7 @@
 <!--clicking on artist should navigate to artist social page-->
 <div>
     <h2>New Artist</h2>
-    <dl>
+    <dl class="song-container">
         <dt>$dArtist1</dt>
         <dd>Artist Decription, Artist Social Link</dd>
     </dl>
@@ -63,7 +71,7 @@
 <!--clicking on artist should navigate to artist social page-->
 <div>
     <h2>Top Artist</h2>
-    <dl>
+    <dl class="song-container">
         <dt>$dArtist1</dt>
         <dd>Artist Description, Artist Social Link</dd>
     </dl>

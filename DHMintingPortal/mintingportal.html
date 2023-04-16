@@ -28,7 +28,7 @@
     <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
     <body>
         <!--form to post to database-->     
-        <form class="form-containter" action="mintingportal.php" method="post">
+        <form class="form-containter">
             <p>Mint your NFT by filling out the information below</p>
             <label for="username">Artist Name:</label><br>
             <input type="text" id=="username" name="username"><br>
@@ -36,7 +36,9 @@
             <input type="text" id="nft" name="nft"><br>
             <label for="nftprice"> NFT Price in $DAM:</label><br>
             <input type="decimal" id="nftprice" name="nftprice"><br>
-            <input type="submit" value="Submit">
+            <label for="filedata"> Upload File Link:</label><br>
+            <input type="text" id="filedata" name="filedata"><br>
+            <input type="submit" value="MintNFT">
         </form>
     </body>
 </html>
