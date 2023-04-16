@@ -47,10 +47,24 @@
 }
 
 .post-content-div{
-
+    width: 400px;
 }
 
 .post-content-text{
     margin:25px;
+    color: white;
+}
+
+.artist-song-list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+.artist-song{
+}
+
+.song-text{
     color: white;
 }
