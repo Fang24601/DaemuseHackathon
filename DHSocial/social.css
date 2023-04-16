@@ -1,8 +1,8 @@
 
 .header {
     padding: 10px 16px;
-    background-color: #c60f8e;
-    color: white;
+    background-color: #79c27b;
+    color: black;
 }
 
 .content {
@@ -17,6 +17,11 @@
 
 .fixed + .content {
     padding-top: 102px;
+}
+
+.menu-button{
+    background-color:#c60f8e;
+    color: white;
 }
 
 .user-post{
@@ -47,10 +52,5 @@
 
 .post-content-text{
     margin:25px;
-    background-image: linear-gradient(white, black);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
