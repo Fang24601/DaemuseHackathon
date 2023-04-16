@@ -11,16 +11,24 @@
             border-style: dotted;
             border-color:indigo;
         }
-        h2{
-            border-style: dotted;
-            border-color:indigo
+        h3{
+            color:azure;
         }
         .grid-container{
             display: grid;
             justify-content:space-evenly;
             grid-template-columns: auto auto auto auto;
             grid-template-rows: auto auto auto auto;
-
+        }
+        .trading-container{
+            display: flex;
+            height:100px;
+            flex-direction: column;
+            justify-content: center;
+            background-image: linear-gradient(#b8eac7, #db0e9e);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
     </style>
     </head>
@@ -32,6 +40,14 @@
     <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
     <body>
         <!--Trading Pairs-->
-
+    <div>
+        <button style="height: 50px;background-color:#c60f8e;color:white">Add trading pair?</button>
+        <h3 class="trading-container" sytle=""><center>trading pair DAM/cBTC TOTAL DAM LOCKED: 10,000,000 TOTAL cBTC LOCKED: 25000 YIELD 20% APR</center></h3>
+        <h3 class="trading-container" sytle=""><center>trading pair DAM/ADA TOTAL DAM LOCKED: 5,000,000 TOTAL ADA LOCKED: 250,000 YIELD 50% APR</center></h3>
+        <h3 class="trading-container" sytle=""><center>trading pair DAM/SUNDAE TOTAL DAM LOCKED: 100,000,000 TOTAL SUNDAE LOCKED: 100,000 YIELD 200% APR</center></h3>
+        <h3 class="trading-container" sytle=""><center>trading pair DAM/HOSKY TOTAL DAM LOCKED: 1,000,000 TOTAL HOSKY LOCKED: 1,000,000,000 YIELD 2000% APR</center></h3>
+        
+    </div>
+       
     </body>
 </html>

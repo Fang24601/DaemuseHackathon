@@ -7,19 +7,10 @@
         body{
             background-color:#b8eac7;
         }
-        h1{
-            border-style: dotted;
-            border-color:indigo;
-        }
-        h2{
-            border-style: dotted;
-            border-color:indigo
-        }
-        .grid-container{
-            display: grid;
+        .container{
+            display: flex;
             justify-content:space-evenly;
-            grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto auto;
+            height:96%;
 
         }
     </style>
@@ -36,51 +27,47 @@
     <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
 <!--if connected to wallet then display user name information-->
 
- <!--Use of Containers for lists of Recent/top Songs/Artists in Database-->
-<section>
-<h2>Recent Songs</h2><!--database php to sql database of songs-->
+<!--Use of Containers for lists of Recent/top Songs/Artists in Database-->
 <!--display dSong varchars in order of time minted-->
 <!--clicking on song should take user to page to purchase song-->
-<div class="grid-container">
+<div>
+    <h2>Recent Songs</h2>
+    <dl>
+        <dt>$dSong1</dt>
+        <dd>Song Value, Artist Social Link</dd>
+    </dl>
+</div>
+
+<!--database php to sql database of songs-->
+<!--display dSong varchars in order of highest value-->
+<!--clicking on song should take user to page to purchase song-->
+<div>
+    <h2>Top Songs</h2>
    <dl>
         <dt>$dSong1</dt>
         <dd>Song Value, Artist Social Link</dd>
     </dl>
 </div>
-<h2>Top Songs</h2><!--database php to sql database of songs-->
-<!--display dSong varchars in order of highest value-->
-<!--clicking on song should take user to page to purchase song-->
-</section>
-<section>
-<div class="grid-container">
-    <dl>
-        <dt>$dSong1</dt>
-        <dd>Song Value, Artist Social Link</dd>
-    </dl>
-</div>
-</section>
-<section>
-<h2>New Artist</h2><!--database php to sql database of new wallet creating minting-->
+<!--database php to sql database of new wallet creating minting-->
 <!--display dArtist varchars in order of recency-->
 <!--clicking on artist should navigate to artist social page-->
-<div class="grid-container">
+<div>
+    <h2>New Artist</h2>
     <dl>
         <dt>$dArtist1</dt>
-        <dd>Artist Decriptption, Artist Social Link</dd>
+        <dd>Artist Decription, Artist Social Link</dd>
     </dl>
 </div>
-</section>
-<section>
-<h2>Top Artist</h2><!--database php to sql database of new wallet creating minting-->
+<!--database php to sql database of new wallet creating minting-->
 <!--display dArtist varchars in order of recency-->
 <!--clicking on artist should navigate to artist social page-->
-<div class="grid-container">
+<div>
+    <h2>Top Artist</h2>
     <dl>
         <dt>$dArtist1</dt>
-        <dd>Artist Decriptption, Artist Social Link</dd>
+        <dd>Artist Description, Artist Social Link</dd>
     </dl>
 </div>
-</section>
 
 </body>
 </html>

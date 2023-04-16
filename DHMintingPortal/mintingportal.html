@@ -1,1 +1,42 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:#b8eac7;
+            }
+            .form-containter{
+            display: flex;
+            height:100%;
+            flex-direction: column;
+            justify-content: center;
+            background-image: linear-gradient(#b8eac7, #db0e9e);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        </style>
+    </head>
+    <header>
+        <h1><center><b><i> Daemuse Minting Portal</i></b></center></h1>
+    </header>
+    <!--top bar links-->
+    <a href="../DHAPIs/walletapi.html"><button id="Connect Wallet" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Connect Wallet</button></a>
+    <a href="../DHMarketplace/marketplace.html"><button id="minting" style="width: 19%;height: 30px;background-color:#c60f8e;color:white" >MarketPlace</button></a>
+    <a href="../DHSocial/social.html"><button id="Social" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Social</button></a>
+    <a href="../DHDex/dex.html"><button id="Dex" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">DEX</button></a>
+    <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
+    <body>
+        <!--form to post to database-->     
+        <form class="form-containter" action="mintingportal.php" method="post">
+            <p>Mint your NFT by filling out the information below</p>
+            <label for="username">Artist Name:</label><br>
+            <input type="text" id=="username" name="username"><br>
+            <label for="nft">NFT mint name:</label><br>
+            <input type="text" id="nft" name="nft"><br>
+            <label for="nftprice"> NFT Price in $DAM:</label><br>
+            <input type="decimal" id="nftprice" name="nftprice"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
