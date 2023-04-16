@@ -1,0 +1,3 @@
+
+CREATE DATABSE daemuseDB;
+CREATE TABLE ;
