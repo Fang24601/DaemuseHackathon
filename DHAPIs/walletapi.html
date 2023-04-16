@@ -7,6 +7,16 @@
             body{
                 background-color:#b8eac7;
             }
+            .wallet-container{
+            display: flex;
+            height: 500px;
+            flex-direction: column;
+            justify-content: center;
+            background-image: linear-gradient(#b8eac7, #db0e9e);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
             </style>
     </head>
     <header><h1><center>Daemuse Connect Wallet</center></h1></header>
@@ -16,6 +26,24 @@
     <a href="../DHMarketplace/marketplace.html"><button id="Dex" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Marketplace</button></a>
     <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
     <body>
-        <p>integtrate me</p>
+        <div class="wallet-container">
+        <h2><center><form>
+            <p>Select Your Wallet to Connect</p>
+            <input type="radio" id="nami" name="wallettype" value="NamiWallet">
+            <label for="nami">NamiWallet</label><br>
+            <input type="radio" id="card" name="wallettype" value="CardWallet">
+            <label for="card">CardWallet</label><br>
+            <input type="radio" id="flint" name="wallettype" value="FlintWallet">
+            <label for="flint">FlintWallet</label><br>
+            <input type="radio" id="NuFi" name="wallettype" value="NuFi">
+            <label for="NuFi">NuFI</label><br>
+            <input type="radio" id="gero" name="wallettype" value="GeroWallet">
+            <label for="gero">GeroWallet</label><br>
+            <input type="radio" id="yoroi" name="wallettype" value="Yoroi">
+            <label for="yoroi">Yoroi</label><br>
+            <input type="submit" value="ConnetWallet">
+        
+        </form></center></h2>
+    </div>
     </body>
 </html>

@@ -15,6 +15,9 @@
             background-position: center;
             background-attachment: fixed;
         }
+        script {
+             display: none;
+        }
         </style>
     </head>
     <header>
@@ -27,7 +30,8 @@
     <a href="../DHDex/dex.html"><button id="Dex" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">DEX</button></a>
     <a href="../DHHomepage/homepage.html"><button id="homepage" style="width: 19%;height: 30px;background-color:#c60f8e;color:white">Homepage</button></a>
     <body>
-        <!--form to post to database-->     
+        <!--form to post to database-->
+        <!--script to input NFT minting-->  
         <form class="form-containter">
             <p>Mint your NFT by filling out the information below</p>
             <label for="username">Artist Name:</label><br>
@@ -38,7 +42,24 @@
             <input type="decimal" id="nftprice" name="nftprice"><br>
             <label for="filedata"> Upload File Link:</label><br>
             <input type="text" id="filedata" name="filedata"><br>
-            <input type="submit" value="MintNFT">
+            <input type="submit" value="MintNFT" onclick="submitForm()">
         </form>
+        <script>
+            function submitForm() {
+			var username = document.getElementById("username").value;
+			var nft = document.getElementById("nft").value;
+			var nftprice = document.getElementById("nftprice").value;
+            var filelink = document.getElementById("filelink").value;
+
+			var data = {
+				"username": username,
+				"nft": nft,
+				"nftprice": nftprice,
+                "filelink": filelink
+			};
+            const jsonObject= JSON.parse(data)
+			console.log(jsonObject); // view the JSON object in console
+		}
+        </script>
     </body>
 </html>
